@@ -1,0 +1,66 @@
+<html>
+<style>
+  * { box-sizing: border-box; }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#vidtop-content {
+	top: 0;
+	color: #fff;
+}
+.vid-info { position: absolute; top: 0; right: 0; width: 40%; background: rgba(0,0,0,0.6); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+}
+</style>
+<body>
+  <div class="video-background">
+    <div class="video-foreground">
+      <iframe src="https://www.youtube.com/embed/f2zj5qybVLc?controls=0&loop=1&showinfo=0&rel=0&autoplay=1&mute=1&playlist=f2zj5qybVLc" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+<div id="vidtop-content">
+<div class="vid-info">
+	  <h1>Welcome to Ralph's Bricks &amp; Minifigs</h1>
+	  <p>🚚💨 <strong>FREE SHIPPING*</strong> on orders over $35!</p>
+    <p>Currently only shipping to 🇺🇸</p>
+    <hr>
+    <h2>Choose how you want your order packed at checkout</h2>
+    <h3>♻️ Environmentally-friendly Shipping</h3>
+    <p>Lots are bagged together to minimize the number of bags needed.</p>
+    <p>$3.99 simple rate ($4.49 for orders under $1)</p>
+    <p>* Free shipping is only available in Environmentally-friendly shipping </p>
+    <h3>📦 Standard Domestic Shipping</h3>
+    <p>Each lot bagged is separately.
+    <p>$4.99</p>
+	 <a href=https://store.bricklink.com/ralphs_bricks&utm_content=globalnav#/Shop">🛒 Start shopping!!</a>
+  </div>
+</div>
+
+</body>
+</html>
